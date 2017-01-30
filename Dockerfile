@@ -17,6 +17,7 @@ ADD init_config.sh /init_config.sh
 RUN chmod +x /run.sh
 RUN chmod +x /init_config.sh
 
+CMD /run.sh
 
 EXPOSE 389
 EXPOSE 636

@@ -1,5 +1,8 @@
 # openldap-alpine
 
+[NOTE]
+A pre-built copy of this container can be pulled from docker hub, as `dariko/openldap-alpine`
+
 This repository is used to build a minimal openldap container.
 
 A minimal initialization script is given as `/init_config.sh`. +

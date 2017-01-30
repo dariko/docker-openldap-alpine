@@ -1,0 +1,19 @@
+# openldap-alpine
+
+This repository is used to build a minimal openldap container.
+
+A minimal initialization script is given as `/init_config.sh`. +
+This script configures `cn=config` as `olcRootDn` for the `cn=config` db. +
+An environment variable `OPENLDAP_ALPINE_CNCONFIG_PW` is *needed* and is used
+as olcRootPW for the `cn=config` entry.
+
+The `run.sh` script, set as `CMD` for the container, accepts two variables:
+
+- `OPENLDAP_ALPINE_LISTEN_URI`( `"ldap:// ldaps://"` )
++
+given to `slapd` as `-h` parameter.
+
+- `OPENLDAP_ALPINE_LOGLEVEL`( `"256"` )
++
+given to `slapd` as `-d` parameter.
+
